@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Website | By Code Info</title>
+    <!-- Font Awesome Cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Header-->
+    <header class="header">
+        <a href="index.html" class="logo">
+        <i class="fas fa-swatchbook"></i> Live Construction Project Dashboard
+        </a>
+        <nav class="navbar">
+            <a href="index.html" class="active" >Home</a>
+            <a href="#about">about</a>
+            <a href="Dashboard.html">Dashboard</a>
+            <a href="#contact">contact</a>
+            <a href="#">FAQs</a>
+            <a href="index2.html">Login</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-btn"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-instagram"></i>
+        </div>    
+    </header>
+
+    <!-- Home Selection -->
+    <section class="home">
+        <div class="container">
+            <div class="landing">
+                <div class="content">
+                    <h2><br>Always stay connected<br> to what matters<br> you the most</h2>
+                   <h3><a href="#" class="btn"><br>Learn more</a></h3>
+                </div>
+                <div class="image">
+                    <img src="image/vrheadset.png" alt="">
+                </div> 
+            </div>
+        </div>
+    </section>
+<!--About Section-->
+<section class="about" id="about">
+    <div class="image">
+        <img src="image/about.png" alt="">
+    </div>
+
+    <div class="content">
+        <h3>the future is today</h3>
+        <p>Real time evaluation of construction projects</p>
+        <a href="»" class="btn">Learn more</a>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section class="services" id="services">
+    <h2>Why a Real time Dashboard?</h2>
+    <div class="services-box">
+        <div class="box">
+            <h3>Project Progress Monitoring</h3>
+            <p>
+            <br>Real-time Visualization: Track construction progress instantly with live updates on project milestones, completion percentages, and critical timelines<br>
+            <br>Resource Allocation: Optimize manpower, equipment, and materials based on real-time data, ensuring efficient resource utilization and timely project delivery<br>
+            <br>Early Issue Identification: Identify potential delays or bottlenecks as they occur, allowing for immediate intervention to prevent further setbacks</p>
+            <a href="#" class="btn">More</a>
+        </div>
+
+        <div class="box">
+            <h3>Safety and Compliance Management</h3>
+            <p>
+            <br>Incident Monitoring: Receive instant notifications for safety incidents, enabling quick response and mitigation measures to ensure a secure working environment<br>
+            <br>Compliance Tracking: Real-time tracking of regulatory compliance metrics, ensuring adherence to safety standards and minimizing the risk of penalties or legal issues<br>
+            <br>Emergency Response Planning: Use live data to enhance emergency response preparedness by identifying potential safety risks and implementing proactive safety measures</p>
+            <a href="#" class="btn">More</a>
+        </div>
+
+        <div class="box">
+            <h3>Cost Control and Budget Management</h3>
+            <p>
+            <br>Budget Tracking: Monitor project expenses in real time, allowing for proactive cost management, preventing budget overruns and helps leeping a track<br>
+            <br>Resource Efficiency: Analyze data on material usage, labor costs, and equipment expenses to identify opportunities for cost-saving measures<br>
+            <br>Financial Forecasting: Use real-time financial data to make informed decisions, optimize spending, and maintain financial transparency throughout the construction project</p>
+            <a href="#" class="btn">More</a>
+        </div>
+    </div>
+</section>
+
+<!--Footer Section-->
+<footer id ="contact">
+    <div class="footer-content">
+        <div class = "top">
+            <div class = "logo-details">
+                <i class="fas fa-swatchbook"></i>
+                <span class="logo_name"></span>
+            </div>
+        </div>
+        <div class="link-boxes">
+            <ul class="box">
+                <li class="link_name">Company</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
+
+            <ul class="box">
+                <li class="link_name">Partners</li>
+                <li><a href="#">Virtual</a></li>
+                <li><a href="#">Master</a></li>
+                <li><a href="#">VISA</a></li>
+                <li><a href="#">PayPal</a></li>
+                <li><a href="#">Wise</a></li>
+            </ul>
+            
+            <ul class="box input-box">
+                <li class="link_name">Subscribe</li>
+                <li><input type = "email" placeholder = "Enter your email"></li>
+                <li><input type = "button" value ="Subscribe"></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--Copyright-->
+    <div class = "bottom-details">
+        <div class = "bottom_text">
+            <h1 class = "copyright_text">Copyright ~ 2021 <a href="#">Code Info</a> All rights
+            reserved</h1>
+            <span class = "policy_terms">
+            <a href="#">Privacy Policy</a></span>
+            <a href="#">Terms & Conditions</a>
+            </span>
+        </div>
+    </div>
+</footer>
+
+<script>
+    let navbar = document.querySelector('.navbar');
+
+    document.querySelector('#menu-btn').onclick = () => {
+        navbar.classList.toggle('active');
+
+        // Add smooth transition effect
+        if (navbar.classList.contains('active')) {
+            navbar.style.transition = 'height 0.3s ease-in-out';
+        } else {
+            navbar.style.transition = 'height 0.3s ease-in-out';
+        }
+    };
+</script>
+</body>
+</head>
+</html>
